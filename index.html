@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doodle Canvas | draw something!</title>
+    <link rel="icon" type="image/png" href="images/brush.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <scrpit async src="https://www.googletagmanager.com/gtag/js?id=UA-124056360-4"></scrpit>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-124056360-4');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">Doodle Canvas</div>
+      </header>
+      <div class="alertBox">
+        <div class="alertIcon"><i class="fas fa-exclamation-circle"></i></div>
+        <div class="alertText">If you're using <span>mobile device</span>, it's better to <span>rotate your screen </span>to use the tools 🙂!</div>
+      </div>
+      <div class="main">
+        <div class="drawBox">
+          <div class="pens">
+            <label for="pen1">
+              <input type="radio" name="pen" id="pen1"/><i class="penId1 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen2">
+              <input type="radio" name="pen" id="pen2"/><i class="penId2 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen3">
+              <input type="radio" name="pen" id="pen3"/><i class="penId3 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen4">
+              <input type="radio" name="pen" id="pen4"/><i class="penId4 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen5">
+              <input type="radio" name="pen" id="pen5"/><i class="penId5 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen6">
+              <input type="radio" name="pen" id="pen6"/><i class="penId6 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen7">
+              <input type="radio" name="pen" id="pen7"/><i class="penId7 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen8">
+              <input type="radio" name="pen" id="pen8"/><i class="penId8 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen9">
+              <input type="radio" name="pen" id="pen9"/><i class="penId9 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen10">
+              <input type="radio" name="pen" id="pen10"/><i class="penId10 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen11">
+              <input type="radio" name="pen" id="pen11"/><i class="penId11 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen12">
+              <input type="radio" name="pen" id="pen12"/><i class="penId12 fas fa-pencil-alt"></i>
+            </label>
+            <label for="pen13">
+              <input type="radio" name="pen" id="pen13"/><i class="penId13 fas fa-pencil-alt"></i>
+            </label>
+          </div>
+          <canvas id="doodle"></canvas>
+        </div>
+        <div class="toolBox">
+          <div class="tool size">
+            <div class="sizeTitle">Crayon<br>Size</div>
+            <label for="sizeS">
+              <input type="radio" name="size" id="sizeS"/><span class="sizeS"></span>
+            </label>
+            <label for="sizeM">
+              <input type="radio" name="size" id="sizeM"/><span class="sizeM"></span>
+            </label>
+            <label for="sizeL">
+              <input type="radio" name="size" id="sizeL"/><span class="sizeL"></span>
+            </label>
+          </div>
+          <div class="tool erase">Erase<br>Page</div>
+          <div class="tool save">Save<br>Canvas</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

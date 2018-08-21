@@ -1,0 +1,54 @@
+mixin pen(index)
+  label(for=`pen${index+1}`)
+    input(type="radio", name="pen" ,id=`pen${index+1}`)
+    i(class=`penId${index+1}`).fas.fa-pencil-alt
+mixin size(size)
+  label(for=`${size}`)
+    input(type="radio", name="size" ,id=`${size}`)
+    span(class=`${size}`)
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Doodle Canvas | draw something!
+    link(rel="icon", type="image/png", href="images/brush.png")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.css")
+    scrpit(async, src="https://www.googletagmanager.com/gtag/js?id=UA-124056360-4")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-124056360-4');
+  body
+    .container
+      header
+        .title Doodle Canvas
+      .alertBox
+        .alertIcon
+          i(class="fas fa-exclamation-circle")
+        .alertText
+          | If you're using 
+          span mobile device
+          | , it's better to 
+          span rotate your screen 
+          | to use the tools 🙂!
+      .main
+        .drawBox
+          .pens
+            - for (let i=0; i<13; i++)
+              +pen(i)
+          canvas#doodle
+        .toolBox
+          .tool.size
+            .sizeTitle Crayon<br>Size
+            +size('sizeS')
+            +size('sizeM')
+            +size('sizeL')
+          .tool.erase Erase<br>Page
+          .tool.save Save<br>Canvas
+    script(src="js/script.js")
+
