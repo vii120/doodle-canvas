@@ -3,8 +3,11 @@
 // --------------------
 var alertIcon = document.querySelector('.alertIcon');
 var alertText = document.querySelector('.alertText');
-if (screen.width < 992){
+// change scale on mobile device
+if (screen.width < 500){
   alertText.classList.add('show')
+  let scale = screen.width / (500 * 1.1);
+  document.querySelector("meta[name=viewport]").setAttribute('content',`width=device-width, initial-scale=${scale}, user-scalable=0`);
 }
 alertIcon.onclick = function(e){
   e.stopPropagation();
@@ -88,6 +91,7 @@ function startPen(e){
   let getY = e.offsetY || e.touches[0].pageY - this.getBoundingClientRect().y - this.clientTop;
   [penStatus.x, penStatus.y] = [getX, getY];
   e.preventDefault();
+  console.log(e.touches[0])
 }
 
 function movePen(e){
