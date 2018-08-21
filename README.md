@@ -26,12 +26,12 @@ https://vii120.github.io/doodle-canvas/
 
 因為希望保持畫布的空間，故設定了畫布最小寬度為 500px，樣式也有所調整
 
-![mobile]](https://i.imgur.com/KzXFzBS.png)
+![mobile](https://i.imgur.com/KzXFzBS.png)
 
 
 在使用行動裝置（螢幕寬度<992px）時，會主動顯示提醒視窗，建議使用者**旋轉螢幕**至橫向
 
-![alert]](https://i.imgur.com/q7x78ik.png)
+![alert](https://i.imgur.com/q7x78ik.png)
 
 ## Language
 
