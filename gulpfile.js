@@ -7,9 +7,7 @@ var uglify = require('gulp-uglify-es').default;
 //pug
 gulp.task('pug', () => 
   gulp.src('src/*.pug')
-    .pipe(pug({
-      pretty: true
-    }))
+    .pipe(pug())
     .pipe(gulp.dest('./'))
 );
 
