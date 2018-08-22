@@ -23,7 +23,7 @@ document.onclick = function(){
 var pensBox = document.querySelector('.pens');
 var penIds = pensBox.querySelectorAll('i');
 let colors = ['#9F161D', '#ED6517', '#ffd24c', '#3B8F2F',
-'#10B5AE', '#19199F', '#7A55B5', '#96189D', '#A37C63',
+'#10B5AE', '#19199F', '#96189D', '#F282AA', '#A37C63',
 '#783B10', '#000000', '#929290', '#ffffff'];
 for (let i=0; i<penIds.length; i++){
   penIds[i].color = colors[i];

@@ -1,0 +1,27 @@
+{
+  "name": "doodle-canvas",
+  "version": "1.0.0",
+  "description": "![home](https://i.imgur.com/m1bp3Eo.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vii120/doodle-canvas.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vii120/doodle-canvas/issues"
+  },
+  "homepage": "https://github.com/vii120/doodle-canvas#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}

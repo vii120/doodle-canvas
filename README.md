@@ -8,7 +8,7 @@ https://vii120.github.io/doodle-canvas/
 
 ## Intro
 
-使用 canvas 製作的塗鴉網站，且可儲存畫布的圖片
+使用 canvas 製作的塗鴉網站，且可儲存畫好的圖片
 
 樣式參考了Yahoo!奇摩即時通的Doodle聊天情境
 
@@ -31,7 +31,7 @@ https://vii120.github.io/doodle-canvas/
 
 在使用行動裝置（螢幕寬度<500px）時，會自動縮放螢幕至適當的大小
 
-為避免誤觸放大後無法還原，螢幕會**關閉觸控縮放功能**
+為避免誤觸放大後無法還原，螢幕會**關閉觸控縮放**功能
 
 並主動在行動裝置開啟網站時跳出**提醒視窗**告知
 
@@ -40,3 +40,5 @@ https://vii120.github.io/doodle-canvas/
 ## Language
 
 使用 **Pug** 及 **Sass** 撰寫 HTM 與 CSS
+
+使用 **Gulp** 任務管理工具
