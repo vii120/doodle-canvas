@@ -37,7 +37,7 @@ https://vii120.github.io/doodle-canvas/
 
 ![alert](https://i.imgur.com/IcPt8Qk.png)
 
-## Language
+## Tools
 
 使用 **Pug** 及 **Sass** 撰寫 HTM 與 CSS
 
