@@ -43,3 +43,7 @@ https://vii120.github.io/doodle-canvas/
 使用 **Pug** 及 **Sass** 撰寫 HTM 與 CSS
 
 使用 **Gulp** 任務管理工具
+
+## Reference
+
+Udemy：[JavaScript Draw on HTML5 Canvas Element](https://www.udemy.com/javascript-html5-canvas-course/)
